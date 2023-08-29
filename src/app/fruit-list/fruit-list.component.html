@@ -1,0 +1,21 @@
+<div class="split-view">
+  <div class="left-side">
+    <ul>
+      <li *ngFor="let fruit of getJsonKeys()" (click)="onDisplayNumber(fruit)">
+        <div class="card flex flex-wrap gap-3 justify-content-center">
+          <p-button styleClass="p-button-outlined "> {{ fruit }}  </p-button>
+      </div>
+      </li>
+    </ul>
+  </div>
+  <div class="right-side">
+    <div class="centered-number" *ngIf="selectedNumber !== null">
+      <h1>Selected Number:</h1>
+      <h1>{{ selectedNumber }}</h1>
+
+<div class="card flex justify-content-center">
+  <p-tag value="{{selectedNumber}}"></p-tag>
+</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+nav {
+  margin: 0;
+  padding: 25px;
+  list-style: none;
+  display: flex; /* Display the links in a row */
+  background-color: #949fa6; /* Background color for the navigation */
+}
+
+/* Styling for each navigation link */
+.nav-link {
+  text-decoration:solid;
+  color: #fff;
+  font-size:x-large;
+  padding: 10px 30px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Styling for the active link */
+.active {
+  background-color: #555;
+  color: #ff9900;
+}
+
+/* Adding spacing between links */
+.nav-link:not(:last-child) {
+  margin-right: 10px;
+}
